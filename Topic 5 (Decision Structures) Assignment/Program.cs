@@ -179,7 +179,7 @@
 
                 if (payment > 20)
                 {
-                payment = 20;
+                    payment = 20;
                 }
             }
 
@@ -195,7 +195,48 @@
         //Part 3
         public static void Hurricane()
         {
+            int hurricaneLevel = 0;
 
+            while (hurricaneLevel == 0 || hurricaneLevel > 5)
+            {
+                int.TryParse(Console.ReadLine(), out hurricaneLevel);
+            }
+
+            switch (hurricaneLevel)
+            {
+                case 1:
+                    
+                    Console.WriteLine("Wind Speed of a Catagory 1 Hurricane: ");
+                
+                    break;
+
+                case 2: 
+                
+                    Console.WriteLine();
+                    
+                    break;
+
+                case 3:
+                    
+                    Console.WriteLine();
+                    
+                    break;
+
+                case 4:
+                    
+                    Console.WriteLine();
+                    
+                    break;
+
+                case 5:
+                    
+                    Console.WriteLine();
+                    
+                    break;
+            }
+
+            Console.WriteLine("");
+            Menu();
         }
         //
     }
