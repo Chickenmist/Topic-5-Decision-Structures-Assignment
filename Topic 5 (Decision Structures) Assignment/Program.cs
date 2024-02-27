@@ -197,6 +197,9 @@
         {
             int hurricaneLevel = 0;
 
+            Console.WriteLine("-------HURRICANE CHECKER-------");
+            Console.Write("Welcome to the hurricane checker. Enter what catagory of hurricane (1-5) you want to check the wind speed of.");
+
             while (hurricaneLevel == 0 || hurricaneLevel > 5)
             {
                 int.TryParse(Console.ReadLine(), out hurricaneLevel);
@@ -206,36 +209,37 @@
             {
                 case 1:
                     
-                    Console.WriteLine("Wind Speed of a Catagory 1 Hurricane: ");
+                    Console.WriteLine("Wind Speed of a Catagory 1 Hurricane: 74-95 mph or 64-82 kt or 119-153 km/h");
                 
                     break;
 
                 case 2: 
                 
-                    Console.WriteLine();
+                    Console.WriteLine("Wind Speed of a Catagory 2 Hurricane: 96-110 mph or 83-95 kt or 154-177 km/h");
                     
                     break;
 
                 case 3:
                     
-                    Console.WriteLine();
+                    Console.WriteLine("Wind Speed of a Catagory 3 Hurricane: 111-130 mph or 96-113 kt or 178-209 km/h");
                     
                     break;
 
                 case 4:
                     
-                    Console.WriteLine();
+                    Console.WriteLine("Wind Speed of a Catagory 4 Hurricane: 131-155 mph or 114-135 kt or 210-249 km/h");
                     
                     break;
 
                 case 5:
                     
-                    Console.WriteLine();
+                    Console.WriteLine("Wind Speed of a Catagory 5 Hurricane: greater than 155 mph, 135 kt or 249 km/h");
                     
                     break;
             }
 
             Console.WriteLine("");
+            Console.WriteLine("-------THAT'S QUITE FAST-------");
             Menu();
         }
         //
